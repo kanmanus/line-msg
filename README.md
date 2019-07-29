@@ -62,19 +62,20 @@ Simply provide an understandable phrase to describe the action's area.
 * top-right
 * bottom-left
 * bottom-right
-
+----
 <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2x.png">
 
 ###### 2 actions (Horizontal)
 * full-left
 * full-right
-
+----
 <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2y.png">
 
 ###### 2 actions (Vertical)
 * full-top
 * full-bottom
-
+----
+Example code:
 ```
 let imagemap = msg.imagemap({
     content: 'https://placeimg.com/1000/1000/tech/sepia',
