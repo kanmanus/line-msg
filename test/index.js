@@ -31,11 +31,11 @@ let test = () => {
             height: 1000,
             actions: [
                 {
-                    uri: 'https://apple.com',
+                    uri: 'https://example.com/link/1',
                     pos: 'top-left'
                 },
                 {
-                    uri: 'https://google.com',
+                    uri: 'https://example.com/link/2',
                     pos: 'top-right'
                 },
                 {
@@ -49,13 +49,13 @@ let test = () => {
             altText: 'Brown Cafe',
             text: 'Enjoy delicious food with a great atmosphere at our place',
             defaultAction: {
-                label: 'Google',
-                uri: 'https://www.google.com'
+                label: 'Reserve',
+                uri: 'https://example.com/reserve'
             },
             actions: [
                 {
-                    label: 'Google',
-                    uri: 'https://www.google.com'
+                    label: 'Reserve',
+                    uri: 'https://example.com/reserve'
                 },
                 {
                     label: 'Greeting Message',
@@ -63,11 +63,25 @@ let test = () => {
                 }
             ],
             image: {
-                url: '',
-                ratio: 'square',
+                url: 'https://placeimg.com/800/600/tech/sepia',
+                ratio: 'rectangle',
                 size: 'cover',
                 bgColor: '#FFF'
             }
+        }),
+        confirm: msg.confirm({
+            altText: 'Confirm Template',
+            text: 'Are you sure?',
+            actions: [
+                {
+                    label: 'Yes',
+                    text: 'yes'
+                },
+                {
+                    label: 'No',
+                    text: 'no'
+                }
+            ]
         }),
         images: msg.imageCarousel({
             altText: 'Social Media Platforms',

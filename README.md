@@ -55,26 +55,12 @@ let location = msg.location({
 #### Imagemap
 Simply provide an understandable phrase to describe the action's area.
 
-<img src="https://github.com/kanmanus/line-msg/blob/master/assets/template4.png">
+| Type                   | Template | Position Values                                     |
+|------------------------|----------|-----------------------------------------------------|
+| 2 actions (Horizontal) | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2x.png"> | * full-left * full-right                            |
+| 2 actions (Vertical)   | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2y.png"> | * full-top * full-bottom                            |
+| 4 actions              | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template4.png"> | * top-left * top-right * bottom-left * bottom-right |
 
-###### 4 actions
-* top-left
-* top-right
-* bottom-left
-* bottom-right
-----
-<img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2x.png">
-
-###### 2 actions (Horizontal)
-* full-left
-* full-right
-----
-<img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2y.png">
-
-###### 2 actions (Vertical)
-* full-top
-* full-bottom
-----
 Example code:
 ```
 let imagemap = msg.imagemap({
@@ -84,11 +70,11 @@ let imagemap = msg.imagemap({
     height: 1000,
     actions: [
         {
-            uri: 'https://apple.com',
+            uri: 'https://example.com/link/1',
             pos: 'top-left'
         },
         {
-            uri: 'https://google.com',
+            uri: 'https://example.com/link/2',
             pos: 'top-right'
         },
         {
@@ -98,3 +84,82 @@ let imagemap = msg.imagemap({
     ]
 });
 ```
+#### Buttons Template
+````
+let buttons = msg.buttons({
+    title: 'Brown Cafe',
+    altText: 'Brown Cafe',
+    text: 'Enjoy delicious food with a great atmosphere at our place',
+    defaultAction: {
+        label: 'Reserve',
+        uri: 'https://example.com/reserve'
+    },
+    actions: [
+        {
+            label: 'Reserve',
+            uri: 'https://example.com/reserve'
+        },
+        {
+            label: 'Greeting Message',
+            text: 'Hi, there!'
+        }
+    ],
+    image: {
+        url: 'https://placeimg.com/800/600/tech/sepia',
+        ratio: 'rectangle',
+        size: 'cover',
+        bgColor: '#FFF'
+    }
+});
+````
+#### Confirm Template
+````
+let confirm = msg.confirm({
+    altText: 'Confirm Template',
+    text: 'Are you sure?',
+    actions: [
+        {
+            label: 'Yes',
+            text: 'yes'
+        },
+        {
+            label: 'No',
+            text: 'no'
+        }
+    ]
+});
+````
+#### Image Carousel Template
+````
+let imageCarousel = msg.imageCarousel({
+    altText: 'Social Media Platforms',
+    images: [
+        {
+            url: 'https://d.line-scdn.net/n/_s1/_0/linecorp-web-uit/images/line_icon_200_v3.jpg',
+            actions: [
+                {
+                    label: 'Website',
+                    uri: 'https://line.me'
+                },
+                {
+                    label: 'Greeting Message',
+                    text: 'Hi, we are LINE platform'
+                }
+            ]
+        },
+        {
+            url: 'https://i.site.pictures/RALuu.jpg',
+            actions: [
+                {
+                    label: 'Website',
+                    uri: 'https://facebook.com'
+                },
+                {
+                    label: 'Greeting Message',
+                    text: 'Hi, we are Facebook platform'
+                }
+            ]
+        }
+    ]
+});
+````
