@@ -55,7 +55,7 @@ let location = msg.location({
 #### Imagemap
 Simply provide an understandable phrase to describe the action's area.
 ###### 4 actions
-<img src="https://github.com/kanmanus/line-msg/tree/master/assets/templatey.png">
+<img src="https://github.com/kanmanus/line-msg/blob/master/assets/templatey.png">
 
 * top-left
 * top-right
@@ -63,13 +63,13 @@ Simply provide an understandable phrase to describe the action's area.
 * bottom-right
 
 ###### 2 actions (Horizontal)
-<img src="https://github.com/kanmanus/line-msg/tree/master/assets/template2x.png">
+<img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2x.png">
 
 * full-left
 * full-right
 
 ###### 2 actions (Vertical)
-<img src="https://github.com/kanmanus/line-msg/tree/master/assets/template2y.png">
+<img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2y.png">
 
 * full-top
 * full-bottom
