@@ -1,0 +1,22 @@
+{
+  "name": "line-msg",
+  "version": "1.0.2",
+  "description": "A simple JSON message object helper library that allows you to easily generate message objects in the LINE Messaging API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanmanus/line-msg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanmanus/line-msg/issues"
+  },
+  "homepage": "https://github.com/kanmanus/line-msg#readme",
+  "dependencies": {
+    "util": "^0.12.1"
+  }
+}
