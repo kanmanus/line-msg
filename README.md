@@ -57,9 +57,9 @@ Simply provide an understandable phrase to describe the action's area.
 
 | Type                   | Template | Position Values                                     |
 |------------------------|----------|-----------------------------------------------------|
-| 2 actions (Horizontal) | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2x.png"> | * full-left * full-right                            |
-| 2 actions (Vertical)   | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2y.png"> | * full-top * full-bottom                            |
-| 4 actions              | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template4.png"> | * top-left * top-right * bottom-left * bottom-right |
+| 2 actions (Horizontal) | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2x.png"> | <ul><li>full-left</li><li>full-right</li></ul>|
+| 2 actions (Vertical)   | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template2y.png"> | <ul><li>full-top</li><li>full-bottom</li></ul>|
+| 4 actions              | <img src="https://github.com/kanmanus/line-msg/blob/master/assets/template4.png"> | <ul><li>top-left</li><li>top-right</li><li>bottom-left</li><li>bottom-right</li></ul>|
 
 Example code:
 ```
