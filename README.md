@@ -55,7 +55,7 @@ let location = msg.location({
 #### Imagemap
 Simply provide an understandable phrase to describe the action's area.
 ###### 4 actions
-<img src="https://github.com/kanmanus/line-msg/blob/master/assets/templatey.png">
+<img src="https://github.com/kanmanus/line-msg/blob/master/assets/template4.png">
 
 * top-left
 * top-right
